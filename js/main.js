@@ -1,20 +1,12 @@
 var $body = $('body');
 
-$('html').on('keydown',function() {
+$('html').on('keydown', function () {
   var $ball = $('<div>');
+  var newLeft = Math.random() * 4000;
+  var newTop = Math.random() * 1000;
+
   $body.append($ball);
-  var newLeft = Math.random() * 100;
   $ball.css('left', newLeft);
   $ball.addClass('ball');
-});
-
-var $body = $('body');
-$('html').on('keydown', function() {
-  var $ball = $('<div>');
-  $body.append($ball);
-  var newLeft = Math.random() * 400;
-  $ball.css('left', newLeft);
-  var newTop = Math.random() * 200;
   $ball.css('top', newTop);
-
 });
